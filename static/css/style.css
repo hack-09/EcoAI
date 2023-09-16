@@ -1,0 +1,90 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the content */
+h1, h2, p {
+    text-align: center;
+}
+
+/* Style the headings */
+h1 {
+    color: #02b902 !important;
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #555;
+}
+
+h3{
+    color: slategray;
+    font-family: cursive;
+    font-size: 1.8rem;
+    background: cornsilk;
+}
+/* Style the paragraphs */
+p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #777;
+}
+
+/* Add spacing between paragraphs */
+p + p {
+    margin-top: 5px;
+}
+
+/* Add a container for the content */
+.extra-features {
+    background: ghostwhite;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the extra features */
+.extra-features h2 {
+    font-size: 34px;
+    font-family: cursive;
+    color: #277268;
+}
+
+.extra-features p {
+    font-size: 18px;
+    color: #555;
+}
+
+.extra-features ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+/* Style the chart canvas */
+#environmentalChart {
+    margin-top: 20px;
+}
+
+/* Style the links */
+.extra-features a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.extra-features a:hover {
+    text-decoration: underline;
+}
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+
+<body>
+    <div class="extra-features">
+        <h1>Welcome to EcoSustainAI</h1>
+        <h2>Environmental Insights</h2>
+        <p>Air Quality Recommendations: {{ air_quality_recommendations }}</p>
+        <p>Water Pollution Recommendations: {{ water_pollution_recommendations }}</p>
+
+
+        <h2>Additional Information</h2>
+
+        <script>
+            var city = prompt("Enter your city:");
+                    
+            if (city !== null && city !== "") {
+                // Send an AJAX request to the server to fetch temperature, climate pattern, air quality, and water pollution
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "/get_data?city=" + city, true);
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        // Parse the JSON response containing temperature, climate pattern, air quality, and water pollution
+                        var data = JSON.parse(xhr.responseText);
+                    
+                        // Display temperature, climate pattern, air quality, and water pollution
+                        document.getElementById('temperature').textContent = "Current Temperature: " + data.temperature + "°C";
+                        document.getElementById('climate_pattern').textContent = "Climate Pattern: " + data.climate_pattern;
+                        document.getElementById('air_quality').textContent = "Air Quality: " + data.air_quality;
+                        document.getElementById('water_pollution').textContent = "Water Pollution: " + data.water_pollution;
+                    } else if (xhr.readyState === 4 && xhr.status !== 200) {
+                        alert("Failed to fetch data.");
+                    }
+                };
+                xhr.send();
+            } else {
+                alert("City not provided. Please refresh the page and enter your city.");
+            }
+
+        </script>
+
+        <!-- Display Temperature -->
+        <p id="temperature">Fetching...</p>
+
+        <!-- Climate Pattern -->
+        <p id="climate_pattern"></p>
+
+        <ul>
+            <li>Air Quality: {{ air_quality_health }}</li>
+            <li>Water Pollution: {{ water_pollution_health }}</li>
+        </ul>
+
+        <!-- Visualizations (Chart.js example) -->
+        <canvas id="environmentalChart" width="400" height="200"></canvas>
+
+        <!-- News and Updates -->
+        <h3>News and Updates</h3>
+        <ul>
+            <li><a href="#">Recent Environmental Initiatives</a></li>
+            <li><a href="#">Climate Change News</a></li>
+        </ul>
+
+        <!-- Local Events -->
+        <h3>Upcoming Local Events</h3>
+        <ul>
+            <li><a href="#">Environmental Cleanup Drive - Sept 20</a></li>
+            <li><a href="#">Climate Change Awareness Workshop - Oct 5</a></li>
+        </ul>
+    </div>
+
+    <!-- JavaScript for Chart.js (you'll need to include the Chart.js library) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // JavaScript code for creating a chart
+        var ctx = document.getElementById('environmentalChart').getContext('2d');
+        var environmentalChart = new Chart(ctx, {
+            type: 'bar', // Change chart type as needed
+            data: {
+                labels: ['Air Qualty', 'Water Pollution', 'Deforestation'],
+                datasets: [{
+                    label: 'Environmental Data',
+                    data: [54.34, 27.30, 0.261236 ], // Sample data, replace with actual data
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

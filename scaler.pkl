@@ -1,0 +1,5 @@
+€•U      Œsklearn.linear_model._base”ŒLinearRegression”“”)”}”(Œ
+fit_intercept”ˆŒcopy_X”ˆŒn_jobs”NŒpositive”‰Œn_features_in_”KŒcoef_”Œjoblib.numpy_pickle”ŒNumpyArrayWrapper”“”)”}”(Œsubclass”Œnumpy”Œ ndarray”“”Œshape”K…”Œorder”ŒC”Œdtype”hŒdtype”“”Œf8”‰ˆ‡”R”(KŒ<”NNNJÿÿÿÿJÿÿÿÿK t”bŒ
+allow_mmap”ˆŒnumpy_array_alignment_bytes”Kubÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿþÿÿÿÿÿ#@•9       Œrank_”KŒ	singular_”h
+)”}”(hhhK…”hhhhh ˆh!Kubÿÿÿÿÿ-Â“Ñª @•_       Œ
+intercept_”Œnumpy.core.multiarray”Œscalar”“”hC      =”†”R”Œ_sklearn_version”Œ1.3.0”ub.
