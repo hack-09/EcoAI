@@ -1,110 +1,102 @@
 
-# 🏥 **Telemedicine App**  
-**A Simple, Secure, and User-Friendly Platform for Remote Healthcare Consultations**  
+# 🌍 **EcoAI - Driving Sustainable Futures**  
+**Empowering Environmental Conservation Through AI-Driven Insights & Actionable Solutions**  
 
 ---
 
-## 🌟 **Overview**  
-Empower patients and doctors to connect seamlessly for virtual consultations, appointment management, and secure medical document sharing. Built with **Android** and **Firebase**, this app bridges the gap between healthcare providers and patients, making healthcare accessible anytime, anywhere.  
+## 🎯 **Purpose**  
+
+EcoAI combines cutting-edge AI with environmental science to:  
+
+🌱 **Environmental Data Insights**  
+- Capture, process, and analyze real-time data on **air quality, water pollution, deforestation, and climate patterns**.  
+- Provide interactive visualizations to understand the planet’s health.  
+
+🌿 **Sustainable Practices Propagation**  
+- Deliver **personalized recommendations** for eco-friendly habits.  
+- Engage users with gamified challenges to drive sustainable behavior.  
 
 ---
 
 ## ✨ **Key Features**  
 
-### 👩⚕️ **For Patients**  
-- **📝 Create & Manage Profile:** Sign up and personalize your profile.  
-- **📅 Book Appointments:** Browse doctor profiles and schedule consultations based on availability.  
-- **📁 Upload Medical Documents:** Securely store and share health records.  
-- **💊 View Prescriptions:** Access prescriptions uploaded by doctors post-consultation.  
+### 📊 **Real-Time Environmental Insights**  
+- **Air & Water Quality Monitoring**: Track pollutants and contaminants.  
+- **Deforestation Analysis**: Visualize forest cover changes over time.  
+- **Climate Pattern Predictions**: AI-driven forecasts for temperature and rainfall trends.  
 
-### 👨⚕️ **For Doctors**  
-- **⏰ Manage Availability:** Set and update consultation slots.  
-- **📋 Access Patient Records:** Review medical history and documents.  
-- **🖋️ Upload Prescriptions:** Share digital prescriptions instantly.  
+### 💡 **Sustainable Practices Recommendations**  
+- **Personalized Tips**: Tailored suggestions for reducing carbon footprints.  
+- **Gamified Challenges**: Earn badges for eco-friendly actions like recycling or energy conservation.  
+- **Progress Tracking**: Monitor your impact with dashboards and reports.  
 
 ---
 
-## 📸 **Screenshots**  
+## 🚀 **Installation**  
 
-| Login & Registration | Patient & Doctor Profiles | Navigation & Documents |  
-|-----------------------|---------------------------|-------------------------|  
-| <img src="assets/login.png" width="200"> <img src="assets/register.png" width="200"> | <img src="assets/patient_profile.png" width="200"> <img src="assets/doctor_profile.png" width="200"> | <img src="assets/navigation_menu.png" width="200"> <img src="assets/documents.png" width="200"> |  
+### **Prerequisites**  
+- Python 3.8+  
+- pip package manager  
 
-| Prescriptions & Appointments | Settings & Support |  
-|-------------------------------|---------------------|  
-| <img src="assets/prescription.png" width="200"> <img src="assets/appointmentManage.png" width="200"> | <img src="assets/settings.png" width="200"> <img src="assets/help_support.png" width="200"> |  
+### **Steps**  
+1. **Clone the Repository**  
+   ```bash
+   git clone https://github.com/hack-09/EcoAI.git
+   cd EcoAI
+   ```
+
+2. **Install Dependencies**  
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Set Up Environment Variables**  
+   Create a `.env` file in the root directory and add your API keys (e.g., weather or pollution data providers).  
+
+---
+
+## 📈 **Usage**  
+
+### **1. Data Collection & Analysis**  
+- Run the data pipeline:  
+  ```bash
+  python scripts/data_collector.py
+  ```  
+- Analyze trends using Jupyter notebooks in `/notebooks`.  
+
+### **2. Web Application**  
+- Start the Flask server:  
+  ```bash
+  python app.py
+  ```  
+- Access the dashboard at `http://localhost:5000` to view insights and challenges.  
 
 ---
 
 ## 🛠️ **Tech Stack**  
 
-- **Frontend:**  
-  ![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?logo=android-studio&logoColor=white)  
-  ![Java](https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white)  
-
-- **Backend:**  
-  ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)  
-
-- **Libraries:**  
-  ![Retrofit](https://img.shields.io/badge/Retrofit-4A154B?logo=retrofit&logoColor=white)  
-  ![Glide](https://img.shields.io/badge/Glide-4A154B?logo=glide&logoColor=white)  
-  ![Room Database](https://img.shields.io/badge/Room_SQLite-003B57?logo=sqlite&logoColor=white)  
-
----
-
-## 🚀 **Installation Guide**  
-
-### **Prerequisites**  
-- [Android Studio](https://developer.android.com/studio)  
-- A Firebase account for authentication and database setup.  
-
-### **Setup Instructions**  
-1. **Clone the Repository**  
-   ```bash
-   git clone https://github.com/hack-09/Telemedicine.git
-   ```
-
-2. **Open the Project**  
-   Launch Android Studio and open the cloned directory.  
-
-3. **Configure Firebase**  
-   - Create a Firebase project and enable:  
-     - **Authentication**  
-     - **Realtime Database**  
-     - **Storage**  
-   - Download `google-services.json` and place it in `app/`.  
-
-4. **Sync & Run**  
-   Build the project and run it on an emulator or physical device.  
-
----
-
-## 📱 **Usage Guide**  
-
-1. **Sign Up/Login**  
-   - Patients and doctors can register or log in via Firebase.  
-
-2. **For Patients**  
-   - Browse doctors, book slots, upload documents, and view prescriptions.  
-
-3. **For Doctors**  
-   - Set availability, manage appointments, and upload prescriptions.  
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue?logo=python)  
+![Pandas](https://img.shields.io/badge/Pandas-Data_Analysis-green?logo=pandas)  
+![Flask](https://img.shields.io/badge/Flask-Web_Framework-lightgrey?logo=flask)  
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-orange?logo=image%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAApgAAAKYB3X3%2FOAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFZSURBVEiJ7ZY9SgRBEIe%2FqpnZ2WVdWDGYmNkFEQwi6Bm8goGVZxDBwGA9guANPIJGUBAxEzEwMRATUcRlF3aZ6QlmYWNjd9lZ8Q98UD3V3f%2FXH1V1jqmpKeNaH%2BhwUq9CAAYhhBBCa8UQgmu9A5VSSiml1Dp5mqaDAAzDAOAcpJSklDqklDvMlwB4nuf39%2FdRFAEgIqSUEEJgjEGv1%2BsDCHwfAK01nucBAEQEl8vlPJ%2FPA1Cr1QBwXRfHcWg0Gggh0FqjlML3fYQQdDodAIQQWGuJogitNaVSCSEEwzBkPp%2Fjui5JkpAkCZZlkaYpWmsajQZxHFOv1wFwHAfP87AsC8uyME0T0zRxXRfP8wAYj8fEcYxlWRQKBbIsI8sykiTBMAy01hSLRZIkYTKZMBgM8DyP2WyGbdtYloXjONi2TZ7nDAYD0jRlOp0ShiFhGKKUIo5joihCa02WZQghUEqRpimj0YhKpUK5XMZxHEqlEkIIhBBorRFCkOc5WmsWiwWj0Yh2u02r1WJrawvLslguLwC4HY%2FHAJRKJQAAAABJRU5ErkJggg%3D%3D)  
 
 ---
 
 ## 🤝 **Contributing**  
 We welcome contributions! Follow these steps:  
 1. **Fork the Repository**  
-2. **Create a Branch**  
-   ```bash
-   git checkout -b feature/your-feature
+2. **Create a Feature Branch**  
+   ```bash  
+   git checkout -b feature/your-feature  
    ```  
 3. **Commit & Push**  
-   ```bash
-   git commit -m "Add your awesome feature"
-   git push origin feature/your-feature
+   ```bash  
+   git commit -m "Add your eco-friendly feature"  
+   git push origin feature/your-feature  
    ```  
 4. **Open a Pull Request**  
+
+📘 For details, read our [Contributing Guidelines](CONTRIBUTING.md).  
 
 ---
 
@@ -113,18 +105,11 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## 📬 **Contact**  
-For questions or feedback:  
-📧 [priyanshukumar9780@gmail.com](mailto:priyanshukumar9780@gmail.com)  
+## 🌟 **Why EcoAI?**  
+- **Real-Time Insights**: Stay informed about environmental changes.  
+- **Actionable Solutions**: Turn data into meaningful action.  
+- **Community-Driven**: Join a global movement for sustainability.  
 
 ---
 
-## ❤️ **Why Choose This App?**  
-- **Secure:** Firebase ensures data privacy and encryption.  
-- **User-Centric Design:** Intuitive UI for patients and doctors.  
-- **Real-Time Updates:** Instant appointment and prescription sync.  
-- **Open Source:** Customize and scale for your needs!  
-
----
-
-**Let’s revolutionize healthcare accessibility together!** 💙  
+**Together, let’s build a greener future!** 🌳💚  
