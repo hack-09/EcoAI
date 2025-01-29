@@ -1,61 +1,130 @@
-## EcoAI - Driving Sustainable Futures
 
-Welcome to EcoAI, an AI-driven system designed to address environmental conservation by providing real-time insights, encouraging sustainable practices, and promoting a more eco-friendly way of life.
+# 🏥 **Telemedicine App**  
+**A Simple, Secure, and User-Friendly Platform for Remote Healthcare Consultations**  
 
-### Purpose
+---
 
-The purpose of EcoAI is twofold:
-1. **Environmental Data Insights**: To capture, process, and analyze diverse environmental data encompassing air quality, water pollution, deforestation rates, and climate patterns, providing real-time insights and visualizations for a comprehensive grasp of the environment's present state.
-   
-2. **Sustainable Practices Propagation**: To encourage people, groups, and businesses to adopt eco-friendly behaviors by providing personalized ideas, helpful lessons, and engaging challenges through AI-driven tools, thus contributing to a sustainable future.
+## 🌟 **Overview**  
+Empower patients and doctors to connect seamlessly for virtual consultations, appointment management, and secure medical document sharing. Built with **Android** and **Firebase**, this app bridges the gap between healthcare providers and patients, making healthcare accessible anytime, anywhere.  
 
-### Features and Functionalities
+---
 
-1. **Real-time Environmental Insights**:
-   - Monitoring and analysis of air quality, water pollution, deforestation rates, and climate patterns.
-   - Real-time visualizations to illustrate the environment's present state.
+## ✨ **Key Features**  
 
-2. **Sustainable Practices Recommendations**:
-   - Personalized eco-friendly suggestions based on user profiles.
-   - Engaging challenges and gamification to promote sustainable behaviors.
+### 👩⚕️ **For Patients**  
+- **📝 Create & Manage Profile:** Sign up and personalize your profile.  
+- **📅 Book Appointments:** Browse doctor profiles and schedule consultations based on availability.  
+- **📁 Upload Medical Documents:** Securely store and share health records.  
+- **💊 View Prescriptions:** Access prescriptions uploaded by doctors post-consultation.  
 
-### Installation
+### 👨⚕️ **For Doctors**  
+- **⏰ Manage Availability:** Set and update consultation slots.  
+- **📋 Access Patient Records:** Review medical history and documents.  
+- **🖋️ Upload Prescriptions:** Share digital prescriptions instantly.  
 
-Follow these steps to set up the EcoAI project locally:
+---
 
-1. **Clone the Repository**:
+## 📸 **Screenshots**  
+
+| Login & Registration | Patient & Doctor Profiles | Navigation & Documents |  
+|-----------------------|---------------------------|-------------------------|  
+| <img src="assets/login.png" width="200"> <img src="assets/register.png" width="200"> | <img src="assets/patient_profile.png" width="200"> <img src="assets/doctor_profile.png" width="200"> | <img src="assets/navigation_menu.png" width="200"> <img src="assets/documents.png" width="200"> |  
+
+| Prescriptions & Appointments | Settings & Support |  
+|-------------------------------|---------------------|  
+| <img src="assets/prescription.png" width="200"> <img src="assets/appointmentManage.png" width="200"> | <img src="assets/settings.png" width="200"> <img src="assets/help_support.png" width="200"> |  
+
+---
+
+## 🛠️ **Tech Stack**  
+
+- **Frontend:**  
+  ![Android Studio](https://img.shields.io/badge/Android_Studio-3DDC84?logo=android-studio&logoColor=white)  
+  ![Java](https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white)  
+
+- **Backend:**  
+  ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)  
+
+- **Libraries:**  
+  ![Retrofit](https://img.shields.io/badge/Retrofit-4A154B?logo=retrofit&logoColor=white)  
+  ![Glide](https://img.shields.io/badge/Glide-4A154B?logo=glide&logoColor=white)  
+  ![Room Database](https://img.shields.io/badge/Room_SQLite-003B57?logo=sqlite&logoColor=white)  
+
+---
+
+## 🚀 **Installation Guide**  
+
+### **Prerequisites**  
+- [Android Studio](https://developer.android.com/studio)  
+- A Firebase account for authentication and database setup.  
+
+### **Setup Instructions**  
+1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/hack-09/EcoAI.git
-   cd EcoAI
+   git clone https://github.com/hack-09/Telemedicine.git
    ```
 
-2. **Install Dependencies**:
+2. **Open the Project**  
+   Launch Android Studio and open the cloned directory.  
+
+3. **Configure Firebase**  
+   - Create a Firebase project and enable:  
+     - **Authentication**  
+     - **Realtime Database**  
+     - **Storage**  
+   - Download `google-services.json` and place it in `app/`.  
+
+4. **Sync & Run**  
+   Build the project and run it on an emulator or physical device.  
+
+---
+
+## 📱 **Usage Guide**  
+
+1. **Sign Up/Login**  
+   - Patients and doctors can register or log in via Firebase.  
+
+2. **For Patients**  
+   - Browse doctors, book slots, upload documents, and view prescriptions.  
+
+3. **For Doctors**  
+   - Set availability, manage appointments, and upload prescriptions.  
+
+---
+
+## 🤝 **Contributing**  
+We welcome contributions! Follow these steps:  
+1. **Fork the Repository**  
+2. **Create a Branch**  
    ```bash
-   pip install -r requirements.txt
-   ```
+   git checkout -b feature/your-feature
+   ```  
+3. **Commit & Push**  
+   ```bash
+   git commit -m "Add your awesome feature"
+   git push origin feature/your-feature
+   ```  
+4. **Open a Pull Request**  
 
-### Usage
+---
 
-1. **Data Collection and Analysis**:
-   - Run the data collection script to fetch environmental data.
-   - Use the provided Jupyter notebooks to analyze the data and generate insights.
+## 📜 **License**  
+This project is licensed under the [MIT License](LICENSE).  
 
-2. **Sustainable Practices Recommendations**:
-   - Run the web application using the provided instructions.
-   - Access the recommendations and challenges through the web interface.
+---
 
-### External Dependencies
+## 📬 **Contact**  
+For questions or feedback:  
+📧 [priyanshukumar9780@gmail.com](mailto:priyanshukumar9780@gmail.com)  
 
-- Pandas, NumPy, Matplotlib: For data analysis and visualization.
-- Flask: For the web application.
-- Other dependencies can be found in the `requirements.txt` file.
+---
 
-## Contributing
+## ❤️ **Why Choose This App?**  
+- **Secure:** Firebase ensures data privacy and encryption.  
+- **User-Centric Design:** Intuitive UI for patients and doctors.  
+- **Real-Time Updates:** Instant appointment and prescription sync.  
+- **Open Source:** Customize and scale for your needs!  
 
-If you'd like to contribute to the project, please follow our [Contributing Guidelines](CONTRIBUTING.md).
+---
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-Feel free to modify and customize this README according to your specific project details and structure. Ensure that it provides clear and concise information to users and potential contributors.
+**Let’s revolutionize healthcare accessibility together!** 💙  
